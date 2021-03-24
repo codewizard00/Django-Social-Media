@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+<form action="/" method="POST">
+{% csrf_token %}
+<div class="container ">
+  <div class="row">
+    <div class="col"> 
+
+    </div>
+    <div class="col card my-4">
+      <div class="text-center my-4 " ><h1>SIGN UP</h1></div>
+   
+
+  <div class="mb-3 w-75 m-auto">
+  
+    <label for="exampleInputEmail1" class="form-label my-2"><strong>UserName</strong></label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="username" required>
+  </div>
+  <div class="mb-3 w-75 m-auto">
+    <label for="exampleInputEmail1" class="form-label"><strong> Email </strong></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="email" required>
+  </div>
+
+  <div class="mb-3 w-75 m-auto">
+    <label for="exampleInputPassword1" class="form-label"><strong> Password </strong></label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
+  </div>
+  <div class="mb-3 w-75 m-auto">
+    <label for="exampleInputPassword1" class="form-label"><strong>Confirm Password </strong> </label>
+    <input type="password" class="form-control" name="confpass" required>
+  </div>
+ 
+    <div class="text-center mb-3">
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+  </div>
+  </div>
+</div>
+</form>
+
+{% endblock content %}
+
