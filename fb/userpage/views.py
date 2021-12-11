@@ -46,8 +46,4 @@ def addpost(request):
     else :
         return HttpResponse("hello")
         
-# def follow(request,username,option):
-#     folowing = get_object_or_404(User,username)
 
-#     try:
-#         f,created = follow.objects.get_or_create(follower=request.user)
